@@ -104,7 +104,7 @@ export function HeroSection() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="tel:+523312345678"
+              href="https://wa.me/523317564557?text=Hola.%20Buen%20d%C3%ADa%20%F0%9F%94%A7%0AEstoy%20interesad@%20en%20un%20servicio"
               className=" bg-[#FFC107] hover:bg-[#FFD54F] text-black px-3 py-2 text-xs md:px-5 md:py-3 md:text-base rounded-lg font-bold shadow-xl flex items-center gap-2"
             >
               <MessageCircle className="w-3 h-3 md:w-5 md:h-5" />

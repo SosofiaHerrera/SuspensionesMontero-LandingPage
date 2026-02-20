@@ -61,7 +61,7 @@ export function Footer() {
                 <div className="w-8 h-8 bg-[#1a1a1a] group-hover:bg-[#FFC107] border border-[#FFC107]/20 rounded-lg flex items-center justify-center flex-shrink-0 transition-all">
                   <Phone className="w-4 h-4 group-hover:text-black transition-colors" />
                 </div>
-                <a href="https://wa.me/5213317564557" className="hover:text-[#FFC107] transition-colors">
+                <a href="https://wa.me/523317564557?text=Hola.%20Buen%20d%C3%ADa%20%F0%9F%94%A7%0AEstoy%20interesad@%20en%20un%20servicio" className="hover:text-[#FFC107] transition-colors">
                   +52 (33) 1756 4557
                 </a>
               </li>

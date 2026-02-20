@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export function FlotanteWhatsapp() {
   return (
     <motion.a
-      href="https://wa.me/523312345678"
+      href="https://wa.me/523317564557?text=Hola.%20Buen%20d%C3%ADa%20%F0%9F%94%A7%0AEstoy%20interesad@%20en%20un%20servicio"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-gradient-to-br from-[#25D366] to-[#128C7E] hover:from-[#128C7E] hover:to-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center group"

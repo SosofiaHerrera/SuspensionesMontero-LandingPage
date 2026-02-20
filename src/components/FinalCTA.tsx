@@ -68,7 +68,7 @@ export function FinalCTA() {
             <motion.a
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
-              href="tel:+523312345678"
+              href="https://maps.app.goo.gl/9JXUHdqiqXaEsrjn7"
               className="bg-black text-[#FFC107] px-10 py-5 rounded-xl font-bold shadow-2xl hover:shadow-3xl transition-all flex items-center gap-3 w-full sm:w-auto justify-center group"
             >
               <MapPin className="w-6 h-6 group-hover:rotate-12 transition-transform" />
@@ -78,7 +78,7 @@ export function FinalCTA() {
             <motion.a
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
-              href="https://wa.me/523312345678"
+              href="https://wa.me/523317564557?text=Hola.%20Buen%20d%C3%ADa%20%F0%9F%94%A7%0AEstoy%20interesad@%20en%20un%20servicio"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] text-white px-10 py-5 rounded-xl font-bold shadow-2xl hover:shadow-3xl transition-all flex items-center gap-3 w-full sm:w-auto justify-center group"

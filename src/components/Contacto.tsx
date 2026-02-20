@@ -91,7 +91,7 @@ export function Contacto() {
               </div>
 
               <a
-                href="https://wa.me/5213317564557"
+                href="https://wa.me/523317564557?text=Hola.%20Buen%20d%C3%ADa%20%F0%9F%94%A7%0AEstoy%20interesad@%20en%20un%20servicio"
                 target="_blank"
                 className="bg-[#FFC107] text-base text-black px-5 py-2 rounded-full font-semibold whitespace-nowrap hover:bg-[#e0aa06] transition"
               >

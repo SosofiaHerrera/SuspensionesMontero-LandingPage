@@ -110,7 +110,7 @@ export function Header() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden bg-black/95 border-t border-[#FFC107]/20 overflow-hidden"
+            className="md:hidden bg-black/95 border-t border-[#FFC107]/20 overflow-hidden w-full"
           >
             <nav className="px-4 py-4">
               {menuItems.map((item, index) => (

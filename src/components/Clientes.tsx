@@ -137,7 +137,6 @@ export function Clientes() {
 
       {/* ===================== */}
       {/* GOOGLE RATING BAR */}
-      {/* FULL WIDTH */}
       {/* ===================== */}
       <motion.a
         href="https://www.google.com/maps"
@@ -147,46 +146,35 @@ export function Clientes() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="
-          block
-          w-full
-          bg-[#111]
-          hover:bg-[#161616]
-          transition-colors
-        "
+        className="block w-full bg-[#111] hover:bg-[#161616] transition-colors"
       >
-        <div className="w-full h-[72px] flex justify-center items-center">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 py-4 px-4">
 
-          <div className="flex items-center">
-
-            {/* Rating box */}
-            <div className="bg-[#FFC107] h-[72px] px-6 flex items-center justify-center">
-              <span className="text-black font-bold text-3xl">
-                4.5
-              </span>
-            </div>
-
-            {/* Content */}
-            <div className="flex items-center gap-3 px-6">
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className={`w-4 h-4 ${
-                      i < 4
-                        ? 'fill-[#FFC107] text-[#FFC107]'
-                        : 'text-gray-600'
-                    }`}
-                  />
-                ))}
-              </div>
-
-              <span className="text-white font-medium whitespace-nowrap text-lg">
-                Basado en reseñas reales de Google Maps
-              </span>
-            </div>
-
+          {/* Rating */}
+          <div className="bg-[#FFC107] px-4 py-2 rounded-lg">
+            <span className="text-black font-bold text-2xl sm:text-3xl">
+              4.5
+            </span>
           </div>
+
+          {/* Stars + Text */}
+          <div className="flex flex-col items-center sm:items-start gap-1 text-center sm:text-left">
+            <div className="flex gap-1">
+              {[...Array(5)].map((_, i) => (
+                <Star
+                  key={i}
+                  className={`w-4 h-4 ${
+                    i < 4 ? 'fill-[#FFC107] text-[#FFC107]' : 'text-gray-600'
+                  }`}
+                />
+              ))}
+            </div>
+
+            <span className="text-white text-sm sm:text-base">
+              Basado en reseñas reales de Google Maps
+            </span>
+          </div>
+
         </div>
       </motion.a>
 

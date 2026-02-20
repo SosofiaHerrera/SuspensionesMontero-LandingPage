@@ -45,7 +45,7 @@ export function Contacto() {
                   <h3 className="text-white font-bold text-xl">Ubicación</h3>
                   <p className="text-gray-400 text-lg">
                     Av. las torres<br />
-                    La huizachera, 45690. El Salto, Jalisco
+                    El Salto, Jalisco
                   </p>
                 </div>
               </div>
@@ -76,6 +76,7 @@ export function Contacto() {
             </div>
 
             {/* Teléfono */}
+            
             <div className="flex items-start justify-between gap-6">
               <div className="flex gap-4">
                 <div className="w-12 h-12 bg-[#FFC107] rounded-full flex items-center justify-center">
@@ -84,7 +85,7 @@ export function Contacto() {
                 <div>
                   <h3 className="text-white font-bold text-xl">Teléfono</h3>
                   <p className="text-gray-400 text-lg">
-                    33 3335 8020 | 33 1756 4557
+                    33 3335 8020<br />33 1756 4557
                   </p>
                 </div>
               </div>

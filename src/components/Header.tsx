@@ -16,22 +16,9 @@ export function Header() {
 
   const handleMenuClick = (href: string) => {
     setActiveSection(href);
-
-    const element = document.querySelector(href);
-    if (element) {
-      const y =
-        element.getBoundingClientRect().top +
-        window.pageYOffset -
-        96; // altura del header
-
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-
-    // ⏱ cerrar menú DESPUÉS del scroll (clave en mobile)
-    setTimeout(() => {
-      setIsMenuOpen(false);
-    }, 150);
+    setIsMenuOpen(false);
   };
+
 
   return (
     <motion.header
@@ -56,8 +43,9 @@ export function Header() {
         {/* MENU DESKTOP */}
         <nav className="hidden md:flex items-center gap-8">
           {menuItems.map((item) => (
-            <button
+            <a
               key={item.name}
+              href={item.href}
               onClick={() => handleMenuClick(item.href)}
               className={`relative font-medium transition-colors ${
                 activeSection === item.href
@@ -66,14 +54,7 @@ export function Header() {
               }`}
             >
               {item.name}
-              <span
-                className={`absolute -bottom-1 left-0 h-[2px] bg-[#FFC107] transition-all duration-300 ${
-                  activeSection === item.href
-                    ? 'w-full opacity-100'
-                    : 'w-0 opacity-0'
-                }`}
-              />
-            </button>
+            </a>
           ))}
         </nav>
 
@@ -113,17 +94,15 @@ export function Header() {
             className="md:hidden bg-black/95 border-t border-[#FFC107]/20 overflow-hidden w-full"
           >
             <nav className="px-4 py-4">
-              {menuItems.map((item, index) => (
-                <motion.button
+              {menuItems.map((item) => (
+                <a
                   key={item.name}
-                  initial={{ x: -20, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: index * 0.05 }}
+                  href={item.href}
                   onClick={() => handleMenuClick(item.href)}
-                  className="block w-full text-left px-4 py-3 text-gray-300 hover:text-[#FFC107]"
+                  className="block w-full px-4 py-3 text-gray-300 hover:text-[#FFC107]"
                 >
                   {item.name}
-                </motion.button>
+                </a>
               ))}
             </nav>
           </motion.div>

@@ -57,7 +57,7 @@ export function HeroSection() {
         {/* ================= HERO ================= */}
       <section
         id="inicio"
-        className="relative min-h-[200px] md:min-h-[420px] lg:min-h-[500px] flex items-center pt-24 md:pt-32 pb-16">
+        className="scroll-mt-24 md:scroll-mt-32 relative min-h-[200px] relative min-h-[200px] md:min-h-[420px] lg:min-h-[500px] flex items-center pt-24 md:pt-32 pb-16">
         {/* Background */}
         <div className="absolute inset-0">
           <img

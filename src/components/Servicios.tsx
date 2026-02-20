@@ -29,7 +29,7 @@ export function Servicios() {
   ];
 
   return (
-    <section  id="servicios" className=" scroll-mt-24 md:scroll-mt-28 py-20 px-4 bg-gradient-to-t from-black/60 to-transparent">
+    <section  id="servicios" className=" scroll-mt-22 md:scroll-mt-26 py-20 px-4 bg-gradient-to-t from-black/60 to-transparent">
       <div className="max-w-screen-xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

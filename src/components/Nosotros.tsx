@@ -30,7 +30,7 @@ export function Nosotros() {
       {/* ================= SOBRE NOSOTROS ================= */}
       <section
         id="nosotros"
-        className="scroll-mt-5 py-20 px-4 bg-gradient-to-b from-black to-[#0a0a0a]"
+        className="scroll-mt-22 md:scroll-mt-26 py-20 px-4 bg-gradient-to-b from-black to-[#0a0a0a]"
       >
         <div className="max-w-6xl mx-auto">
           <motion.div

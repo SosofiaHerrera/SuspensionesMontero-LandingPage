@@ -29,31 +29,30 @@ export function HeroSection() {
   return (
     <>
       
-      {/* ================= LOGO DERECHA ================= */}
-        <motion.div 
-          initial={{ opacity: 0, x: 80 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+      {/* ================= LOGO DESKTOP DERECHA ================= */}
+      <motion.div
+        initial={{ opacity: 0, x: 80 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="
+          hidden md:block
+          absolute
+          top-32
+          right-20 right-[20%]
+          z-20
+          pointer-events-none
+        "
+      >
+        <img
+          src="/logotipo.ico"
+          alt="Suspensiones Montero"
           className="
-            hidden md:block
-            absolute
-            top-12 md:top-10 lg:top-32
-            right-16 md:right-28 lg:right-96
-            z-20
-            pointer-events-none
+            w-[320px]
+            lg:w-[420px]
+            drop-shadow-[0_0_45px_rgba(255,193,7,0.45)]
           "
-        >
-          <img
-            src="/logotipo.ico"
-            alt="Suspensiones Montero"
-            className="
-              max-w-[120px]
-              md:max-w-[340px]
-              lg:max-w-[420px]
-              drop-shadow-[0_0_45px_rgba(255,193,7,0.45)]
-            "
-          />
-        </motion.div>
+        />
+      </motion.div>
         {/* ================= HERO ================= */}
       <section
         id="inicio"
@@ -81,14 +80,26 @@ export function HeroSection() {
 
     {/* Content */}
     <div className="relative z-10 w-full">
-      <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-start md:items-start gap-8 md:gap-16">
+      <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center md:items-center gap-8 md:gap-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="max-w-xl text-white flex flex-col justify-center "
         >
-          <h1 className="text-2xl md:text-5xl lg:text-6xl leading-tight mb-4">
+          {/* LOGO MOBILE */}
+          <div className="flex md:hidden mb-6">
+            <img
+              src="/logotipo.ico"
+              alt="Suspensiones Montero"
+              className="
+                w-40
+                max-w-[80%]
+                drop-shadow-[0_0_45px_rgba(255,193,7,0.45)]
+              "
+            />
+          </div>
+          <h1 className="justify-center text-2xl md:text-5xl lg:text-6xl leading-tight mb-4">
             <span className="block">ESPECIALISTAS EN</span>
 
             <span className="block md:inline-block text-[#FFC107] font-bold whitespace-normal md:whitespace-nowrap">
@@ -114,7 +125,7 @@ export function HeroSection() {
 
 
           {/* Trust */}
-          <div className="flex gap-6 text-xs md:text-base text-gray-400">
+          <div className="flex gap-6 text-xs md:text-base text-gray-400 justify-center">
             <div className="flex items-center gap-2">
               <Star className="w-5 h-5 text-[#FFC107] fill-[#FFC107]" />
               Revisión Gratuita

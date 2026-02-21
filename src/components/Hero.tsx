@@ -81,12 +81,12 @@ export function HeroSection() {
 
     {/* Content */}
     <div className="relative z-10 w-full">
-      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 items-left gap-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-white flex flex-col justify-center text-center lg:text-left"
+          className="text-white flex flex-col justify-left text-left lg:text-left"
         >
           {/* LOGO MOBILE */}
           <div className="flex md:hidden mb-6">
@@ -100,7 +100,7 @@ export function HeroSection() {
               "
             />
           </div>
-          <h1 className="justify-center text-2xl md:text-5xl lg:text-6xl leading-tight mb-4">
+          <h1 className="text-2xl md:text-5xl lg:text-6xl leading-tight mb-4">
             <span className="block">ESPECIALISTAS EN</span>
 
             <span className="block md:inline-block text-[#FFC107] font-bold whitespace-normal md:whitespace-nowrap">
@@ -117,7 +117,7 @@ export function HeroSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="https://wa.me/523317564557?text=Hola.%20Buen%20d%C3%ADa%20%F0%9F%94%A7%0AEstoy%20interesad@%20en%20un%20servicio"
-              className=" bg-[#FFC107] hover:bg-[#FFD54F] text-black px-3 py-2 text-xs md:px-5 md:py-3 md:text-base rounded-lg font-bold shadow-xl flex items-center gap-2"
+              className=" bg-[#FFC107] hover:bg-[#FFD54F] text-black px-3 py-2 text-xs md:px-5 md:py-3 md:text-base rounded-lg font-bold shadow-xl flex items-left gap-2"
             >
               <MessageCircle className="w-3 h-3 md:w-5 md:h-5" />
               ENVIAR MENSAJE
@@ -127,7 +127,7 @@ export function HeroSection() {
 
           {/* Trust */}
           <div className="flex gap-6 text-xs md:text-base text-gray-400">
-            <div className="flex items-center gap-2">
+            <div className="flex items-left gap-2">
               <Star className="w-5 h-5 text-[#FFC107] fill-[#FFC107]" />
               Revisión Gratuita
             </div>

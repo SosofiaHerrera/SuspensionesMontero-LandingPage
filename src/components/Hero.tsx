@@ -37,18 +37,19 @@ export function HeroSection() {
         className="
           hidden md:block
           absolute
-          top-32
-          right-20 right-[20%]
+          top-[15%]
+          right-20 right-[15%]
           z-20
           pointer-events-none
+          flex-col justify-center text-center lg:text-right
         "
       >
         <img
           src="/logotipo.ico"
           alt="Suspensiones Montero"
           className="
-            w-[320px]
-            lg:w-[420px]
+            w-[240px]
+            lg:w-[350px]
             drop-shadow-[0_0_45px_rgba(255,193,7,0.45)]
           "
         />
@@ -80,12 +81,12 @@ export function HeroSection() {
 
     {/* Content */}
     <div className="relative z-10 w-full">
-      <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center md:items-center gap-8 md:gap-16">
+      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-xl text-white flex flex-col justify-center "
+          className="text-white flex flex-col justify-center text-center lg:text-left"
         >
           {/* LOGO MOBILE */}
           <div className="flex md:hidden mb-6">
@@ -125,12 +126,12 @@ export function HeroSection() {
 
 
           {/* Trust */}
-          <div className="flex gap-6 text-xs md:text-base text-gray-400 justify-center">
+          <div className="flex gap-6 text-xs md:text-base text-gray-400">
             <div className="flex items-center gap-2">
               <Star className="w-5 h-5 text-[#FFC107] fill-[#FFC107]" />
               Revisión Gratuita
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-left gap-2">
               <Award className="w-5 h-5 text-[#FFC107]" />
               Trabajos Garantizados
             </div>

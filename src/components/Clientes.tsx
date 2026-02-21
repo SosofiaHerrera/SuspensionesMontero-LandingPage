@@ -24,7 +24,7 @@ export function Clientes() {
   ]
 
   return (
-    <section id="clientes" className="scroll-mt-22 md:scroll-mt-26 bg-black">
+    <section id="clientes" className="scroll-mt-22 md:scroll-mt-24 bg-black">
       
       {/* ===================== */}
       {/* TESTIMONIOS */}

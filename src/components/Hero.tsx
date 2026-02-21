@@ -35,13 +35,13 @@ export function HeroSection() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className="
-          hidden md:block
+          hidden
+          lg:block
           absolute
           top-[15%]
-          right-20 right-[15%]
+          right-[15%]
           z-20
           pointer-events-none
-          flex-col justify-center text-center lg:text-right
         "
       >
         <img
@@ -49,7 +49,7 @@ export function HeroSection() {
           alt="Suspensiones Montero"
           className="
             w-[240px]
-            lg:w-[350px]
+            xl:w-[320px]
             drop-shadow-[0_0_45px_rgba(255,193,7,0.45)]
           "
         />
@@ -57,7 +57,7 @@ export function HeroSection() {
         {/* ================= HERO ================= */}
       <section
         id="inicio"
-        className="scroll-mt-24 md:scroll-mt-32 relative min-h-[200px] relative min-h-[200px] md:min-h-[420px] lg:min-h-[500px] flex items-center pt-24 md:pt-32 pb-16">
+        className="scroll-mt-24 md:scroll-mt-24 relative min-h-[200px] relative min-h-[200px] md:min-h-[420px] lg:min-h-[500px] flex items-center pt-24 md:pt-32 pb-16">
         {/* Background */}
         <div className="absolute inset-0">
           <img

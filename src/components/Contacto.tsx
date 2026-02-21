@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export function Contacto() {
   return (
-    <section id="contacto" className="scroll-mt-22 md:scroll-mt-26 py-20 px-4 bg-black">
+    <section id="contacto" className="scroll-mt-22 md:scroll-mt-24 py-20 px-4 bg-black">
       <div className="max-w-screen-xl mx-auto">
 
         {/* Header */}

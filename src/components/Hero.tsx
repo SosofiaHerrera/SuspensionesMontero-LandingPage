@@ -36,10 +36,10 @@ export function HeroSection() {
         transition={{ duration: 1 }}
         className="
           hidden
-          lg:block
+          xl:block
           absolute
           top-[15%]
-          right-[15%]
+          right-[12%]
           z-20
           pointer-events-none
         "
@@ -48,8 +48,8 @@ export function HeroSection() {
           src="/logotipo.ico"
           alt="Suspensiones Montero"
           className="
-            w-[240px]
-            xl:w-[320px]
+            w-[260px]
+            2xl:w-[340px]
             drop-shadow-[0_0_45px_rgba(255,193,7,0.45)]
           "
         />
@@ -57,7 +57,7 @@ export function HeroSection() {
         {/* ================= HERO ================= */}
       <section
         id="inicio"
-        className="scroll-mt-24 md:scroll-mt-24 relative min-h-[200px] relative min-h-[200px] md:min-h-[420px] lg:min-h-[500px] flex items-center pt-24 md:pt-32 pb-16">
+        className="scroll-mt-24 md:scroll-mt- relative min-h-[200px] relative min-h-[200px] md:min-h-[420px] lg:min-h-[500px] flex items-center pt-24 md:pt-32 pb-16">
         {/* Background */}
         <div className="absolute inset-0">
           <img
@@ -89,7 +89,7 @@ export function HeroSection() {
           className="text-white flex flex-col justify-left text-left lg:text-left"
         >
           {/* LOGO MOBILE */}
-          <div className="flex md:hidden mb-6">
+          <div className="flex xl:hidden mb-6">
             <img
               src="/logotipo.ico"
               alt="Suspensiones Montero"
